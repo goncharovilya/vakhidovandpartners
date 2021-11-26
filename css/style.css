@@ -1039,6 +1039,18 @@ body.ie ._ibg img {
           align-items: center;
   font-weight: 600;
   color: #0b284a;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header__city:hover {
+  text-decoration: underline;
+  color: #0b284a;
+}
+
+.header__city:hover svg path {
+  fill: #0b284a;
 }
 
 .header__city svg {
@@ -1079,7 +1091,18 @@ body.ie ._ibg img {
           align-items: center;
   color: inherit;
   text-decoration: underline;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   margin-left: 45px;
+}
+
+.header__email:hover {
+  color: #0b284a;
+}
+
+.header__email:hover svg path {
+  fill: #0b284a;
 }
 
 .header__email svg {
@@ -1097,6 +1120,21 @@ body.ie ._ibg img {
 
 .header__phone .header__phone-link svg {
   margin: 0 10px 0 0;
+}
+
+.header__phone .header__phone-link {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header__phone .header__phone-link:hover {
+  color: #0b284a;
+  text-decoration: underline;
+}
+
+.header__phone .header__phone-link:hover path {
+  fill: #0b284a;
 }
 
 .header__phone .header__phone-link {
@@ -1187,6 +1225,13 @@ body.ie ._ibg img {
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.search-form__icon:hover path {
+  fill: #0b284a;
 }
 
 .search-form__item {
@@ -1251,10 +1296,18 @@ body.ie ._ibg img {
   z-index: 5;
 }
 
+.menu__item._hover .menu__link {
+  color: #204066;
+}
+
 .menu__item._hover .menu__arrow {
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
+}
+
+.menu__item._hover .menu__arrow path {
+  fill: #204066;
 }
 
 .menu__link {
@@ -1273,6 +1326,10 @@ body.ie ._ibg img {
   width: 14px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.menu__arrow path {
+  fill: #000;
 }
 
 .menu__sub-list {
@@ -1434,6 +1491,13 @@ body.ie ._ibg img {
   font-size: 22px;
   font-weight: 600;
   color: #fff;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.footer__phone a:hover {
+  text-decoration: underline;
 }
 
 .footer__social {
@@ -1456,6 +1520,13 @@ body.ie ._ibg img {
 .footer__email {
   font-size: 18px;
   color: #fff;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.footer__email:hover {
+  text-decoration: underline;
 }
 
 .footer__form {
@@ -1500,6 +1571,13 @@ body.ie ._ibg img {
   color: #fff;
   padding-left: 20px;
   position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.location__link:hover {
+  text-decoration: underline;
 }
 
 .location__link svg {
@@ -1667,6 +1745,13 @@ body.ie ._ibg img {
   font-size: 22px;
   font-weight: 500;
   line-height: 139%;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.service__link:hover {
+  text-decoration: underline;
 }
 
 .team {
@@ -1725,6 +1810,20 @@ body.ie ._ibg img {
 
 .partner__descr {
   font-size: 16px;
+}
+
+.partner__link svg path {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.partner__link:first-child:hover svg path {
+  fill: #385f39;
+}
+
+.partner__link:last-child:hover svg path {
+  fill: #0b284a;
 }
 
 .partner__link:not(:last-child) {
@@ -1834,6 +1933,13 @@ body.ie ._ibg img {
   font-size: 16px;
   font-weight: 600;
   position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.page-header__link:hover {
+  text-decoration: underline;
 }
 
 .page-header__link:not(:last-child) {
@@ -1928,7 +2034,17 @@ body.ie ._ibg img {
   font-size: 18px;
   font-weight: 600;
   color: #0b284a;
-  padding: 0 5px;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -2006,6 +2122,11 @@ body.ie ._ibg img {
   color: #204066;
 }
 
+.contacts__phone a:hover {
+  text-decoration: underline;
+  color: #0b284a;
+}
+
 .contacts__social {
   margin-bottom: 37px;
 }
@@ -2014,14 +2135,27 @@ body.ie ._ibg img {
   margin-right: 16px;
 }
 
-.contacts__social a img {
-  width: 26px;
-  height: 26px;
+.contacts__social a svg path {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.contacts__social a:hover svg path {
+  fill: #0b284a;
 }
 
 .contacts__email {
   font-size: 18px;
   color: #204066;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.contacts__email:hover {
+  color: #0b284a;
+  text-decoration: underline;
 }
 
 .contacts__button {
@@ -2120,11 +2254,7 @@ body.ie ._ibg img {
   margin-bottom: 32px;
 }
 
-.right-menu__item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.right-menu__link {
+.right-menu__item {
   padding: 0 0 0 20px;
   position: relative;
   font-size: 16px;
@@ -2132,7 +2262,11 @@ body.ie ._ibg img {
   color: #204066;
 }
 
-.right-menu__link:before {
+.right-menu__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.right-menu__item:before {
   content: "";
   position: absolute;
   left: 0;
@@ -3176,6 +3310,10 @@ body.ie ._ibg img {
   .team__partner {
     width: 369px;
   }
+
+  .reviews__text {
+    max-width: calc(100% - 55px);
+  }
 }
 
 @media (max-width: 400px) and (max-width: 1200px) {
@@ -3211,10 +3349,18 @@ body.ie ._ibg img {
     z-index: 5;
   }
 
+  .menu__item:hover .menu__link {
+    color: #204066;
+  }
+
   .menu__item:hover .menu__arrow {
     -webkit-transform: rotate(-180deg);
         -ms-transform: rotate(-180deg);
             transform: rotate(-180deg);
+  }
+
+  .menu__item:hover .menu__arrow path {
+    fill: #204066;
   }
 }
 
