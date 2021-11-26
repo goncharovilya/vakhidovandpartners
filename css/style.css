@@ -2695,11 +2695,6 @@ body.ie ._ibg img {
     max-width: none;
     padding: 0 10px;
   }
-
-  .article__img-wrapper {
-    max-width: 100%;
-    padding: 0;
-  }
 }
 
 @media (max-width: 767.98px) {
@@ -2937,6 +2932,11 @@ body.ie ._ibg img {
 
   .page-header__link {
     font-size: 14px;
+  }
+
+  .article__img-wrapper {
+    max-width: 100%;
+    padding: 0;
   }
 
   .contacts__body {
