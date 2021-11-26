@@ -558,6 +558,9 @@ textarea.input {
   color: #204066;
   padding: 0 22px 0 0;
   position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 ._link::after {
@@ -574,6 +577,10 @@ textarea.input {
   background-position: center;
   width: 12px;
   height: 5.9px;
+}
+
+._link:hover {
+  text-decoration: underline;
 }
 
 .row:after {
@@ -1346,15 +1353,6 @@ body.ie ._ibg img {
   right: 38px;
 }
 
-.phone-menu--active {
-  -webkit-transform: translate(0px, 0px);
-      -ms-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-  visibility: visible;
-  opacity: 1;
-  top: 40px;
-}
-
 .phone-menu__item {
   text-align: right;
   font-weight: 500;
@@ -1377,6 +1375,13 @@ body.ie ._ibg img {
   height: 1px;
   background-color: #5b789a;
   margin: 25px 0 17px;
+}
+
+.phone-menu.phone-menu--active {
+  visibility: visible;
+  opacity: 1;
+  top: 40px;
+  z-index: 5;
 }
 
 .icon-menu {
@@ -1462,7 +1467,7 @@ body.ie ._ibg img {
   padding: 18px 60px 19px 29px;
   border-radius: 28px;
   border: solid 1px #afafaf;
-  color: #afafaf;
+  color: #000;
   font-size: 16px;
   font-weight: 500;
 }
@@ -1820,6 +1825,7 @@ body.ie ._ibg img {
 .page-header {
   padding: 23px 0;
   background-color: #204066;
+  margin-top: 183px;
 }
 
 .page-header__link {
@@ -1843,6 +1849,12 @@ body.ie ._ibg img {
 .article {
   padding-top: 45px;
   padding-bottom: 60px;
+}
+
+.article__img-wrapper {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
 }
 
 .article__img {
@@ -1880,6 +1892,13 @@ body.ie ._ibg img {
   color: #0b284a;
   margin-bottom: 20px;
   text-decoration: underline;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.articles__subtitle:hover {
+  text-decoration: none;
 }
 
 .articles__date {
@@ -1909,10 +1928,19 @@ body.ie ._ibg img {
   font-size: 18px;
   font-weight: 600;
   color: #0b284a;
+  padding: 0 5px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .articles__pagination-link:not(:last-child) {
   margin-right: 41px;
+}
+
+.articles__pagination-link:hover {
+  background-color: #204066;
+  color: #fff;
 }
 
 .contacts {
@@ -1946,6 +1974,7 @@ body.ie ._ibg img {
 
 .contacts__form label {
   margin: 0 0 10px 30px;
+  color: #000;
 }
 
 .contacts__textarea,
@@ -1957,7 +1986,6 @@ body.ie ._ibg img {
   background-color: #fff;
   width: 100%;
   margin-bottom: 30px;
-  opacity: 0.3;
   font-size: 16px;
   font-weight: 500;
   color: #000;
@@ -2110,12 +2138,12 @@ body.ie ._ibg img {
   left: 0;
   top: 50%;
   width: 7px;
-  height: 12px;
+  height: 7px;
+  background-color: #5b789a;
+  border-radius: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  border: 6px solid transparent;
-  border-left: 7px solid #5b789a;
 }
 
 .last {
@@ -2399,6 +2427,10 @@ body.ie ._ibg img {
     padding-bottom: calc(40px + 20 * ((100vw - 320px) / 880));
   }
 
+  .article__img-wrapper {
+    max-width: 970px;
+  }
+
   .article__title {
     margin-top: calc(40px + 20 * ((100vw - 320px) / 880));
   }
@@ -2603,6 +2635,14 @@ body.ie ._ibg img {
     display: none;
   }
 
+  .page-header {
+    margin-top: 165px;
+  }
+
+  .article__img-wrapper {
+    max-width: 750px;
+  }
+
   .info__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -2654,6 +2694,10 @@ body.ie ._ibg img {
   ._container {
     max-width: none;
     padding: 0 10px;
+  }
+
+  .article__img-wrapper {
+    max-width: 100%;
   }
 }
 
@@ -2790,6 +2834,10 @@ body.ie ._ibg img {
     font-size: 16px;
   }
 
+  .menu__arrow {
+    pointer-events: none;
+  }
+
   .menu__sub-list {
     -webkit-transform: translate(0px, -10px);
         -ms-transform: translate(0px, -10px);
@@ -2800,11 +2848,8 @@ body.ie ._ibg img {
   .phone-menu {
     display: block;
     position: absolute;
-    top: -1000%;
+    top: -1200%;
     right: -50px;
-    -webkit-transform: translate(0px, -10px);
-        -ms-transform: translate(0px, -10px);
-            transform: translate(0px, -10px);
     width: 300px;
     padding: 29px 15.5px 37px 13.5px;
     border-radius: 16px;
