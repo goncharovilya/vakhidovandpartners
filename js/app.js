@@ -841,7 +841,7 @@ $('.header__language-link').on('click', function () {
 // });
 
 
-let headerButton = document.querySelector('.header__phone');
+let headerButton = document.querySelector('.header__phone-link--adaptive');
 let phoneMenu = document.querySelector('.phone-menu');
 
 const toggleMenu = () => {
