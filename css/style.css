@@ -1230,6 +1230,10 @@ body.ie ._ibg img {
   transition: all 0.3s ease 0s;
 }
 
+.search-form__icon path {
+  pointer-events: none;
+}
+
 .search-form__icon:hover path {
   fill: #0b284a;
 }
@@ -1261,6 +1265,17 @@ body.ie ._ibg img {
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0 15px 0 0;
+}
+
+.search-form__close {
+  width: 16px;
+  height: 16px;
+  margin: 0 0 0 15px;
+}
+
+.search-form__close svg {
+  width: 16px;
+  height: 16px;
 }
 
 .search-form__input {
@@ -1359,7 +1374,7 @@ body.ie ._ibg img {
 
 .menu__sub-link {
   color: #191919;
-  line-height: 138%;
+  line-height: 240%;
 }
 
 .adaptive-menu__phone {
@@ -1612,6 +1627,7 @@ body.ie ._ibg img {
   right: 0;
   height: 100%;
   top: 0;
+  border-radius: 20px 0px 0px 20px;
 }
 
 .main__wrapper {
@@ -3225,13 +3241,11 @@ body.ie ._ibg img {
   .main__logo-box {
     width: 440px;
     height: 30px;
-    margin: 0 auto 36px auto;
   }
 
   .main__logo {
     width: 440px;
     height: 30px;
-    margin: 0 auto 36px auto;
   }
 
   .partner {

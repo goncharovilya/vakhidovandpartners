@@ -817,6 +817,11 @@ window.onload = function () {
     }
 }
 
+document.querySelector('.search-form__close').addEventListener('click', () => {
+    document.querySelector('.search-form').classList.remove('_active');
+  });
+
+
 
 document.addEventListener("click", (function (e) {
     const t = e.target;
@@ -831,14 +836,6 @@ document.addEventListener("click", (function (e) {
 $('.header__language-link').on('click', function () {
     $(this).addClass('header__language--active').siblings().removeClass('header__language--active');
 });
-
-// $(document).mouseup(function (e) {
-//     var container = $(".phone-menu");
-//     if (container.has(e.target).length === 0){
-
-//         $(".phone-menu").removeClass('phone-menu--active')
-//     }
-// });
 
 
 let headerButton = document.querySelector('.header__phone-link--adaptive');
